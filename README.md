@@ -4,7 +4,7 @@
 
 ## Tasks
 
-- [ ] Create a new Spring Project with packages for models, repositories, services and controllers.
+- [ ] Create a new Spring Project with packages for [models](src/main/java/tylermaxwell/savetravels/models), repositories, services and controllers.
 
 - [ ] Create a model called [Expense](src/main/java/tylermaxwell/savetravels/models/Expense.java) with all the appropriate fields. Don't forget to add annotations and getters & setters!
 
@@ -12,19 +12,19 @@
 
 - [ ] Create a schema for the project and test the set-up by running your project. Debug as necessary!
 
-- [ ] Create an [index.jsp] file with a table and a form (hard coded for now).
+- [ ] Create an [index.jsp](src/main/webapp/WEB-INF/expenses/index.jsp) file with a table and a form (hard coded for now).
 
-- [ ] Create a route in your controller to render index.jsp and just test that it renders.
+- [ ] Create a route in your [controller](src/main/java/tylermaxwell/savetravels/controllers/ExpenseController.java) to render index.jsp and just test that it renders.
 
-- [ ] Set up your [ExpenseRepository] (findAll is the only necessary query method to add at this time)
+- [ ] Set up your [ExpenseRepository](src/main/java/tylermaxwell/savetravels/repositories/ExpenseRepository.java) (findAll is the only necessary query method to add at this time)
 
-- [ ] Set up your [ExpenseService] with any necessary methods. Don't forget to inject your repository interface as a dependency.
+- [ ] Set up your [ExpenseService](src/main/java/tylermaxwell/savetravels/repositories/ExpenseRepository.java) with any necessary methods. Don't forget to inject your repository interface as a dependency.
 
-- [ ] Add @ModelAttribute annotation and associated syntax to your render route, to bind an empty Expense object to the JSP form to capture the user input.
+- [ ] Add `@ModelAttribute` annotation and associated syntax to your render route, to bind an empty `Expense` object to the JSP form to capture the user input.
 
-- [ ] In your JSP, change the form tags to form:form tags, add the modelAttribute, error tags and be sure to include the path attribute.
+- [ ] In your JSP, change the form tags to `form:form` tags, add the modelAttribute, error tags and be sure to include the path attribute.
 
-- [ ] Add a POST route in your controller to process the form and add a new expense to the database, using the @ModelAttribute annotation to receive the filled Expense object.
+- [ ] Add a POST route in your controller to process the form and add a new expense to the database, using the `@ModelAttribute` annotation to receive the filled Expense object.
 
 - [ ] Be sure the POST route redirects to the render route after creating the new expense.
 

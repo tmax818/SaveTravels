@@ -32,11 +32,7 @@
     <c:forEach var="expense" items="${expenses}">
         <tr>
             <td><c:out value="${expense.id}"></c:out></td>
-            <td>
-                <a href="/books/${expense.id}">
-                    <c:out value="${expense.name}"></c:out>
-                </a>
-            </td>
+            <td><c:out value="${expense.name}"></c:out></td>
             <td><c:out value="${expense.vendor}"></c:out></td>
             <td>$<c:out value="${expense.amount}"></c:out></td>
         </tr>
@@ -45,6 +41,7 @@
 </table>
 
 <h1>New Expense</h1>
+<%--@elvariable id="expense" type="java"--%>
 <form:form action="/expenses" method="post" modelAttribute="expense">
     <p>
         <form:label path="name">Name</form:label>

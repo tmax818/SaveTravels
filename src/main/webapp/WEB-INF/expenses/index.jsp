@@ -45,6 +45,7 @@
 </table>
 
 <h1>New Expense</h1>
+<%--@elvariable id="expense" type="java"--%>
 <form:form action="/expenses" method="post" modelAttribute="expense">
     <p>
         <form:label path="name">Name</form:label>
